@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#1"> q1</a>
+    <a href="#2">q2</a>
+    <a href="#3"> q3</a>
+    <a href="#4">q4</a>
+    <a href="#5"> q5</a>
+    
+    <h4 id="1">LAB PROGRAM 1</h4>
+    <pre>
+import java.util.Scanner;
+class Fact{
+public static void main(String[] args){
+int n,fac=1;
+System.out.print("Enter the number");
+Scanner r=new Scanner(System.in);
+n=r.nextInt();
+for(int i=1;i lesssymbol =n;i++){
+fac=fac*i;
+}
+System.out.println("factorial of the number is :"+fac);
+}
+}
+
+    </pre>
+    <h4 id="2">LAB PROGRAM 2</h4>
+    <pre>
+        public class PrimeDemo2{
+            static void checkPrime(int n){
+            int i,flag=0;
+            if(n==0||n==1){
+            System.out.println(n+" is not prime number");
+            }else{
+            for(i=2; i lesssymbol =n/2;i++){
+            if(n%i==0){
+            System.out.println(n+" is not prime number"); flag=1;
+            break;
+            }
+            }
+            if(flag==0) { System.out.println(n+" is prime number"); }
+            }
+            }
+            public static void main(String args[]){
+            checkPrime(1);
+            checkPrime(4);
+            checkPrime(17);
+            checkPrime(20);
+            }
+            }
+             
+    </pre>
+    <h4 id="3">LAB PROGRAM 3</h4>
+    <pre>
+        import java.util.Scanner;
+public class SortDemo {
+public static void main(String[] args) {
+int n;
+Scanner sc = new Scanner(System.in);
+try {
+System.out.println("Enter the number of elements : ");
+n = sc.nextInt();
+int[] arr = new int[10];
+System.out.println("Please Enter " + n + "Number");
+for (int i = 0; i lesssymbol n; i++) {
+arr[i] = sc.nextInt();
+}
+System.out.println("After Sorting");
+System.out.println("Ascending order");
+for (int i = 0; i lesssymbol n; i++) {
+for (int j = i + 1; j lesssymbol n; j++) {
+int tmp = 0;
+if (arr[i] > arr[j]) {
+tmp = arr[i];
+arr[i] = arr[j];
+arr[j] = tmp;
+}
+}
+System.out.println(" " + arr[i]);
+}
+System.out.println("\n \n Descending order \n");
+for (int i = n - 1; i >= 0; i--) {
+System.out.println(" " + arr[i]);
+}
+} catch (NumberFormatException e) {
+System.out.println("Enter only integers" + e);
+} catch (Exception exception) {
+System.out.println("Error occured " + exception);
+}
+}
+}
+    </pre>
+    <h4 id="4">LAB PROGRAM 4</h4>
+    <pre>
+import java.io.*;
+public class RhombusDemo {
+public static void main(String args[]) throws IOException{
+int i , j, limit;
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+System.out.println("Enter the limit : ");
+limit = Integer.parseInt(br.readLine());
+for(i=1;i lesssymbol =limit;i++){
+for(j=limit-i;j>0;j--)
+System.out.print(" ");
+for (j = 1; j  lesssymbol = 2 * i - 1; j++)
+System.out.print("*");
+System.out.println();
+}
+for(i=limit-1;i>=1;i--) {
+for (j = 1; j lesssymbol = limit - i; j++)
+System.out.print(" ");
+for (j = 1; j lesssymbol = 2 * i - 1; j++)
+System.out.print("*");
+System.out.println();
+}
+}
+}
+    </pre>
+    <h4 id="5">LAB PROGRAM 5</h4>
+    <pre>
+        package com.company;
+        class StringOperation{
+        public static void main (String args[]) {
+        String s1="Hello"; String s2="World";
+        System.out.println("The strings are "+s1+ "and" +s2 );
+        int len1=s1.length();int len2=s2.length();
+        System.out.println("The length of "+s1+ "is:"+len1 );
+        System.out.println("The length of "+s2+ "is:"+len2);
+        System.out.println("The concatenation of two strings "+s1.concat(s2));
+        System.out.println("First character of "+s1+"is="+s1.charAt(0));
+        System.out.println("The upper case of "+s1+"is="+s1.toUpperCase());
+        System.out.println("The lower case of "+s2+"is="+s2.toLowerCase());
+        System.out.println("The letter e occurs at position" +s1.indexOf("e"+"in"+s1));
+        System.out.println("Substring of "+s1+"starting from index 2 and ending at 4 is =
+        "+s1.substring(2,4));
+        System.out.println("Replacing ’e’ with ’o’ in "+s1+"is ="+s1.replace('e','o'));
+        boolean check = s1.equals(s2);if(check == false) {
+        System.out.println("" + s1 + " and " + s2 + " are not same ");
+        }
+        else {
+        System.out.println(""+s1+" and "+s2+" are same ");
+        }
+        }
+        }
+    </pre>
+</body>
+</html>
